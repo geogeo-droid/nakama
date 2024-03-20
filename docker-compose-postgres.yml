@@ -6,6 +6,8 @@ services:
     environment:
       - POSTGRES_DB=nakama
       - POSTGRES_PASSWORD=localdb
+      - POSTGRES_D=pg
+      - PGDATA=/var/lib/postgresql/data/pgdata
     volumes:
       - data:/var/lib/postgresql/data
     expose:
