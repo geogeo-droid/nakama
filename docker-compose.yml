@@ -18,7 +18,6 @@ services:
       timeout: 3s
       retries: 5
   nakama:
-    image: registry.heroiclabs.com/heroiclabs/nakama:3.21.0
     build:
       context: .
       dockerfile: ./build/Dockerfile.local
